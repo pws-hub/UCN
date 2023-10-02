@@ -1,0 +1,16 @@
+
+class {
+  onCreate(){ this.state = { count: 0 } }
+  onIncrement(){ this.state.count++; console.log( this.state.count ) }
+}
+
+$ const text = 'Say, Hello'
+
+<div.bg-danger>
+  <div>${text} <Who on-mount( () => console.log('Who mounted') )/>!</div>
+  <br/>
+  <p>
+    <span>${state.count}</span>
+    <button on-click('onIncrement')>Count</button>
+  </p>
+</div>
