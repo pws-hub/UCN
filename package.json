@@ -2,7 +2,7 @@
   "name": "ucn",
   "description": "UI Component Network",
   "module": "src/index.ts",
-  "engine": {
+  "engines": {
     "bun": ">=1"
   },
   "scripts": {
