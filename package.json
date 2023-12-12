@@ -2,6 +2,9 @@
   "name": "ucn",
   "description": "UI Component Network",
   "module": "src/index.ts",
+  "engine": {
+    "bun": ">=1"
+  },
   "scripts": {
     "start": "bun run --hot src/index.ts",
     "clean": "rm -rf node_modules/.cache"
