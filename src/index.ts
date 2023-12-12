@@ -1,6 +1,8 @@
 import { serve, build, file } from 'bun'
 import { Marko } from './plugins'
 
+const port = 65000
+
 async function checkExists( filepath: string ): Promise<boolean>{
   try { if( await file( filepath ).text() ) return true }
   catch( error ){ return false }
@@ -51,8 +53,10 @@ async function error( error ){
 }
 
 serve({
-  port: 65000,
+  port,
   development: true,
   fetch,
   error
 })
+
+console.log(`UCN Running on port :${port}`)
